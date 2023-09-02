@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaMbook - Social Media Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <h2 class="log">
+                FaMbook
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search for creators">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile-picture">
+                    <img src="./website/Profile.JPEG">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <!-- left -->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-picture">
+                        <img src="./website/Profile.JPEG" alt="">
+                    </div>
+                    <div class="handle">
+                        <h4>Farhan Awan</h4>
+                        <p class="text-muted">
+                            @farhan1
+                        </p>
+                    </div>
+                </a>
+                <!-- sidebar -->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-home"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-compass"></i></span>
+                        <h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">5</small></i></span>
+                        <h3>Notifications</h3>
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./website/ahmedProfile.JPEG" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Ahmed Awan</b> accepted your friend request
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./website/affanProfile.JPEG" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Affan Awan</b> commented on yor post
+                                    <small class="text-muted">1 Hour AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./website/UmarProfile.JPEG" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Umar Mir</b> accepted your friend request
+                                    <small class="text-muted">2 minutes AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./website/aliProfile.JPEG" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Ali Safeer</b> commented on a post yo are tagged in
+                                    <small class="text-muted">5 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./website/mananProfile.JPEG" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Manan Awan</b> and <b>256 others</b> liked your post
+                                    <small class="text-muted">15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="menu-item" id="messages-notifications">
+                        <span><i class="uil uil-envelope-alt"><small class="notification-count">9</small></i></span>
+                        <h3>Messages</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-bookmark"></i></span>
+                        <h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-chart-line"></i></span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item" id="theme">
+                        <span><i class="uil uil-palette"></i></span>
+                        <h3>Theme</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-setting"></i></span>
+                        <h3>Settings</h3>
+                    </a>
+
+                </div>
+                <label class="btn btn-primary" for="create-post">Create Post</label>
+
+            </div>
+
+
+            <!-- middle -->
+            <div class="middle">
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-picture"><img src="./website/ahmedProfile.JPEG" alt=""></div>
+                        <p class="name">Ahmed Awan</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture"><img src="./website/affanProfile.JPEG" alt=""></div>
+                        <p class="name">Affan Awan</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture"><img src="./website/UmarProfile.JPEG" alt=""></div>
+                        <p class="name">Umar Mir</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture"><img src="./website/aliProfile.JPEG" alt=""></div>
+                        <p class="name">Ali Safeer</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture"><img src="./website/mananProfile.JPEG" alt=""></div>
+                        <p class="name">Manan Awan</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture"><img src="./website/saadProfile.JPEG" alt=""></div>
+                        <p class="name">Saad Khan</p>
+                    </div>
+                </div>
+                <form class="create-post">
+                    <div class="profile-picture">
+                        <img src="./website/Profile.JPEG" alt="">
+                    </div>
+                    <input type="text" placeholder="What's on your mind, Farhan?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+                <!-- feed -->
+
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./website/Profile.JPEG" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Farhan Awan</h3>
+                                    <small>UK, 15 MINUTES AGO</small>
+                                </div>
+
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                        </div>
+                        <div class="photo"><img src="./website/Feed.PNG"></div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./website/affanProfile.JPEG" alt=""></span>
+                            <span><img src="./website/mananProfile.JPEG" alt=""></span>
+                            <span><img src="./website/aliProfile.JPEG" alt=""></span>
+                            <p>liked by <b>Affan Awan</b> and <b>5,632 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Farhan Awan</b> Hard Work pays off!!! <span class="hashtag">#Shopper
+                                    #Programmer</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 519 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./website/ahmedProfile.JPEG" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Ahmed Awan</h3>
+                                    <small>Muzaffarabad, 3 DAYS AGO</small>
+                                </div>
+
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                        </div>
+                        <div class="photo"><img src="./website/ahmedFeed.jpg"></div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./website/Profile.JPEG" alt=""></span>
+                            <span><img src="./website/mananProfile.JPEG" alt=""></span>
+                            <span><img src="./website/UmarProfile.JPEG" alt=""></span>
+                            <p>liked by <b>Farhan Awan</b> and <b>532 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Ahmed Awan</b>No caption needed!!! <span class="hashtag">#Kashmir</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 201 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./website/affanProfile.JPEG" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Affan Awan</h3>
+                                    <small>Pirchanasi, 2 DAYS AGO</small>
+                                </div>
+
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                        </div>
+                        <div class="photo"><img src="./website/affanStory.JPG"></div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./website/ahmedProfile.JPEG" alt=""></span>
+                            <span><img src="./website/saadProfile.JPEG" alt=""></span>
+                            <span><img src="./website/aliProfile.JPEG" alt=""></span>
+                            <p>liked by <b>Ahmed Awan</b> and <b>2,462 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Affan Awan</b> Kashmir!!! <span class="hashtag">#Beauty
+                                    #Kashmir</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 290 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./website/mananProfile.JPEG" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Manan Awan</h3>
+                                    <small>Tarbela</small>
+                                </div>
+
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                        </div>
+                        <div class="photo"><img src="./website/mananFeed.JPEG"></div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./website/Profile.JPEG" alt=""></span>
+                            <span><img src="./website/affanProfile.JPEG" alt=""></span>
+                            <span><img src="./website/aliProfile.JPEG" alt=""></span>
+                            <p>liked by <b>Farhan Awan</b> and <b>4,524 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Manan Awan</b> Chillin.. <span class="hashtag">#Photoshoot
+                                    </span></p>
+                        </div>
+                        <div class="comments text-muted">View all 436 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./website/aliProfile.JPEG" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Ali Safeer</h3>
+                                    <small>Bharakahu, 15 DAYS AGO</small>
+                                </div>
+
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                        </div>
+                        <div class="photo"><img src="./website/aliProfile.JPEG"></div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span id="heart-icon"><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./website/affanProfile.JPEG" alt=""></span>
+                            <span><img src="./website/Profile.JPEG" alt=""></span>
+                            <span><img src="./website/mananProfile.JPEG" alt=""></span>
+                            <p>liked by <b>Affan Awan</b> and <b>763 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Ali Safeer</b> Dentist to be!!! <span class="hashtag">#BDS
+                                    #Education</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 519 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./website/UmarProfile.JPEG" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Umar Mir</h3>
+                                    <small>Muzaffarabad, 3 YEARS AGO</small>
+                                </div>
+
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                        </div>
+                        <div class="photo"><img src="./website/UmarProfile.JPEG"></div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./website/saadProfile.JPEG" alt=""></span>
+                            <span><img src="./website/ahmedProfile.JPEG" alt=""></span>
+                            <span><img src="./website/aliProfile.JPEG" alt=""></span>
+                            <p>liked by <b>Saad Khan</b> and <b>945 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Umar Mir</b> Eid Day 1!! <span class="hashtag">#EIDMUBARAK
+                                    #DAY1</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 109 comments</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- right -->
+            <div class="right">
+
+                <!-- Messages -->
+                <div class="messages" id="messages-tab">
+                    <div class="heading">
+                        <h4>Messages</h4><i class="uil uil-edit"></i>
+                    </div>
+                    <div class="search-bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Search messages" id="message-search">
+                    </div>
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(7)</h6>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./website/affanProfile.JPEG" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Affan Awan</h5>
+                            <p class="text-bold">Just woke up bruhhh!!!!</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./website/ahmedProfile.JPEG" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Ahmed Awan</h5>
+                            <p class="text-bold">Yuppp</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./website/UmarProfile.JPEG" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Umar Mir</h5>
+                            <p class="text-muted">Cominggggg!!!</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./website/saadProfile.JPEG" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Saad Khan</h5>
+                            <p class="text-muted">hmmm</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./website/mananProfile.JPEG" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Manan Awan</h5>
+                            <p class="text-muted">Han thk</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Friend Requests -->
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture"><img src="./website/Imran.JPG" alt=""></div>
+                            <div>
+                                <h5>Imran Khan</h5>
+                                <p class="text-muted">1 mutual friends</p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+
+
+
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture"><img src="./website/Nawaz.JPEG" alt=""></div>
+                            <div>
+                                <h5>Nawaz Sharif</h5>
+                                <p class="text-muted">1 mutual friends</p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+
+
+
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture"><img src="./website/Usman.JPEG" alt=""></div>
+                            <div>
+                                <h5>Usman Awan</h5>
+                                <p class="text-muted">13 mutual friends</p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <!-- END OF RIGHT -->
+            </div>
+        </div>
+    </main>
+
+    <!-- THEME CUSTOMIZATION -->
+
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p class="font-muted">Manage yor font size, color, background</p>
+
+            <!-- FONT SIZES -->
+            <div class="font-size">
+                <h4>Font Size</h4>
+            
+            
+            <div>
+                <h6>Aa</h6>
+            <div class="choose-size">
+                <span class="font-size-1"></span>
+                <span class="font-size-2"></span>
+                <span class="font-size-3 active"></span>
+                <span class="font-size-4"></span>
+                <span class="font-size-5"></span>
+            </div>
+            <h3>Aa</h3>
+            </div>
+        </div>
+            <!-- PRIMARY COLORS -->
+
+            <div class="color">
+                <h4>Color</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            <div class="background">
+                <h4>Background</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active"><span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2"><span></span>
+                        <h5 for="bg-2">Dim</h5>
+                    </div>
+                    <div class="bg-3"><span></span>
+                        <h5 for="bg-3">Lights Out</h5>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
